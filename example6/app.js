@@ -6,12 +6,12 @@ var main = function (toDoObjectss) {
     return toDo.description;
     });
     // now all of our old code should work exactly as it did!
-// ...
+    // ...
 };
 
 $(document).ready(function () {
-$.getJSON("todos.json", function (toDoObjects) {
-// we'll call main with toDos as an argument
-main(toDoObjects);
-});
+    $.getJSON("todos.json", function (toDoObjects) {
+        // we'll call main with toDos as an argument
+        main(toDoObjects);
+    });
 });
